@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commerce Core - API Endpoints</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>API Endpoints for E-Commerce</h1>
+    </header>
+
+    <section>
+      <h2>1. CRUD for the administrator</h2>
+
+      <h3>Products</h3>
+
+      <ul>
+        <li><strong>POST</strong> /admin/products - Create a new product</li>
+        <li><strong>GET</strong> /admin/products - Get all products</li>
+        <li><strong>GET</strong> /admin/products/:id - Get product by ID</li>
+        <li><strong>PUT</strong> /admin/products/:id - Update a product</li>
+        <li><strong>DELETE</strong> /admin/products/:id - Delete a product</li>
+      </ul>
+
+      <h3>Categories</h3>
+
+      <ul>
+        <li>
+          <strong>POST</strong> /admin/categories - Create a new categories
+        </li>
+        <li><strong>GET</strong> /admin/categories - Get all categories</li>
+        <li>
+          <strong>PUT</strong> /admin/categories/:id - Update a specific
+          category
+        </li>
+        <li>
+          <strong>DELETE</strong> /admin/categories/:id - Delete a specific
+          category
+        </li>
+      </ul>
+
+      <h3>Orders</h3>
+
+      <ul>
+        <li><strong>GET</strong> /admin/orders - Create all orders</li>
+        <li><strong>GET</strong> /admin/orders - Get a specific order</li>
+        <li>
+          <strong>PUT</strong> /admin/orders/:id - Update a specific order (e.g.
+          change status)
+        </li>
+        <li>
+          <strong>DELETE</strong> /admin/orders/:id - Delete a specific order
+          (e.g. cancel an order)
+        </li>
+      </ul>
+
+      <h3>Users</h3>
+
+      <ul>
+        <li><strong>GET</strong> /admin/users - Create all user</li>
+        <li><strong>GET</strong> /admin/users - Get a specific user</li>
+        <li>
+          <strong>DELETE</strong> /admin/users/:id - Delete a specific user
+        </li>
+      </ul>
+
+      <h2>2. CRUD for the user</h2>
+
+      <h3>Products and navigation</h3>
+
+      <ul>
+        <li><strong>GET</strong> /products - Get all products</li>
+        <li><strong>GET</strong> /products:id - Get all categories</li>
+      </ul>
+
+      <h3>Cart</h3>
+
+      <ul>
+        <li><strong>GET</strong> /cart - Get all products in the cart</li>
+        <li><strong>POST</strong> /cart - Add a product to the cart</li>
+        <li>
+          <strong>PUT</strong> /cart/:id - Update the quantity of a specific
+          product in the cart
+        </li>
+        <li>
+          <strong>DELETE</strong> /cart/:id - Remove a specific product from the
+          cart
+        </li>
+      </ul>
+
+      <h3>Orders</h3>
+
+      <ul>
+        <li><strong>POST</strong> /orders - Create a new order</li>
+        <li><strong>GET</strong> /orders - Get all orders</li>
+        <li><strong>GET</strong> /orders/:id - Get a specific order</li>
+      </ul>
+
+      <h3>Authentication</h3>
+
+      <ul>
+        <li><strong>POST</strong> /auth/register - Register a new user</li>
+        <li><strong>POST</strong> auth/login - Login a user</li>
+        <li><strong>POST</strong> auth/logout - Logout a user</li>
+        <li><strong>POST</strong> auth/refresh - Refresh the access token</li>
+      </ul>
+
+      <h3>Profile</h3>
+
+      <ul>
+        <li><strong>GET</strong> /profile - Get the user's profile</li>
+        <li><strong>PUT</strong> /profile - Update the user's profile</li>
+      </ul>
+    </section>
+  </body>
+</html>
